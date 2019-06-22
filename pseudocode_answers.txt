@@ -1,0 +1,57 @@
+Using the pseudocode you wrote for the previous question, implement it in any computer language of your choice.
+
+INPUT first number
+INPUT second number
+ADD first number and second number together and store the result in total
+RETURN total
+
+INIT total to 0
+INPUT a number
+WHILE the number is not 0
+  ADD number to total
+  INPUT a number
+END WHILE
+RETURN total
+
+Why do programmers use pseudocode?
+Programmers use pseudocode to convey concepts wihout using a specific language or syntax. It's a general way to get across
+a concept without being language specific.
+
+If you run pseudocode on your computer what would happen?
+A computer would not be able to run an pseudocode. It's not an actual programming language a computer can use. 
+
+Create a function that takes two numbers and prints out the greater number.
+INPUT first number
+INPUT second number
+IF first number is greater than second number THEN
+    PRINT first number
+IF first number is less than second number THEN
+    PRINT second number
+END IF
+
+Create a function that prints out the numbers from 1 to 100.
+INIT c to 100
+WHILE c is less than or equal to 100
+PRINT c
+END WHILE
+
+Create a function that searches for a specific entry in a phonebook.
+
+INPUT find to user searche
+IF find does not equal phonebook index
+    add 1 to phonebook index
+IF find does equal phonebook index
+    PRINT find
+END IF
+
+var findEntry = prompt("Enter Phonebook Search Here"); // This will be a user input from a dialog box
+
+// assuming there is an array of Phonebook Entries
+function searchPhonebook(var) {
+    for (i = 0; i <= phonebook.length; i++)
+     if (var === phonebook[i]) {
+         return phonebook[i];
+     } else {
+         return console.log("Entry can't be found");
+     }
+};
