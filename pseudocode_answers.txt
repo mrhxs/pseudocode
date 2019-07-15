@@ -48,7 +48,7 @@ IF pbSearch does equal value of the indexed location
     PRINT No Results Found
 END IF
 
-var findEntry = prompt("Enter Phonebook Search Here"); // This will be a user input from a dialog box
+var pbSearch = prompt("Enter Phonebook Search Here"); // This will be a user input from a dialog box
 
 // phoneBook Example JavaScript
 let phoneBook = {
@@ -68,7 +68,6 @@ let phoneBook = {
      }  
    };
    
-   let pbSearch = "Kelsey";
    let x = 0;
    
    for (var i = 0; i < Object.keys(phoneBook).length; i++) {
