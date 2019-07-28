@@ -93,6 +93,8 @@ CLASS BankAccount
      END
  END FUNCTION
 
+CLASS Offers
+
  FUNCTION creditCardOffer
      IF NOT(customer.hasCreditCard) THEN
          CALL offerCreditCard
@@ -111,8 +113,7 @@ CLASS BankAccount
 
 END
 
-This is easy to undersatnd with good function and variable names. Anyone working on this shouldn't 
-have any trouble figuring out what each section does.  
+This is easy to undersatnd with good function and variable names. Moved credit offer and check status into a separate class
 
 Programming Questions
 You may do the following problems in any language of your choice. Use the clean code principles 
@@ -145,16 +146,16 @@ function checkDuplicate(arry) {
   for (i=0; i < arry.length; i++) {
     for (j=i+1; j < arry.length; j++) {
       if (arry[i] === arry[j]) {
-        return(true);
         var sameChar = 1;
-      };
-    };
-  };
+	return(true);
+      }
+    }
+  }
 
   if (sameChar != 1) {
     return(false);
   }
-};
+}
 
 console.log(checkDuplicate(arry1)); //returns false
 console.log(checkDuplicate(arry2)); //returns true
