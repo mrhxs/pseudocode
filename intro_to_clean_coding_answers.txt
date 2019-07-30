@@ -159,3 +159,8 @@ function checkDuplicate(arry) {
 
 console.log(checkDuplicate(arry1)); //returns false
 console.log(checkDuplicate(arry2)); //returns true
+
+8.
+function checkAnagram(stringOne, stringTwo) {
+   return stringOne.split("").sort().join("") === stringTwo.split("").sort().join("")
+}
